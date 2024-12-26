@@ -1,62 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Your Name</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top" class="hidden">↑</button>
 
-  <main>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
     <section id="hero">
-      <div class="container">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I'm a [Your Profession] with a passion for creating impactful digital experiences.</p>
-      </div>
-    </section>
-
-    <section id="about" class="container">
-      <h2>About Me</h2>
-      <p>Hi! I'm [Your Name], a dedicated [Your Profession]. I specialize in creating solutions that are not only functional but also beautiful.</p>
-    </section>
-
-    <section id="portfolio" class="container">
-      <h2>Portfolio</h2>
-      <div class="grid">
-        <!-- Repeat this block for each project -->
-        <div class="card">
-          <img src="project-thumbnail.jpg" alt="Project Thumbnail">
-          <h3>Project Title</h3>
-          <p>Brief project description goes here.</p>
-          <a href="#" target="_blank">View Project</a>
+        <div class="container">
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <p>I am a <span class="hero-typing"></span></p>
+            <a href="#about" class="btn">Learn More</a>
         </div>
-      </div>
     </section>
 
-    <section id="contact" class="container">
-      <h2>Contact</h2>
-      <p>Feel free to get in touch via email or check out my profiles below:</p>
-      <a href="mailto:your-email@example.com" class="btn">Get in Touch</a>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-target="#skills">Skills</button>
+                <button class="tab-button" data-target="#education">Education</button>
+                <button class="tab-button" data-target="#interests">Interests</button>
+            </div>
+            <div class="tab-content active" id="skills">
+                <p>Programming in Java, Python, HTML/CSS, and more.</p>
+            </div>
+            <div class="tab-content" id="education">
+                <p>Bachelor's degree in Computer Science from XYZ University.</p>
+            </div>
+            <div class="tab-content" id="interests">
+                <p>Passionate about coding, design, and building creative solutions.</p>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-  </footer>
-  <script src="scripts.js"></script>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="grid">
+                <div class="card fade-in">
+                    <h3>Job Title</h3>
+                    <p>Company Name</p>
+                    <p>Details about your role and accomplishments.</p>
+                </div>
+                <!-- Repeat for more experiences -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card fade-in">
+                    <img src="project-thumbnail.jpg" alt="Project Thumbnail">
+                    <h3>Project Title</h3>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <!-- Repeat for more projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
