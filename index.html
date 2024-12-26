@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Anshul Shah's Portfolio - Computer Science Student and Aspiring Software Engineer.">
+    <meta name="description" content="Portfolio of Anshul Shah - Computer Science Student and Aspiring Software Engineer.">
+    <meta name="keywords" content="Anshul Shah, Portfolio, Web Development, Software Engineer, AI, ML, Purdue">
+    <meta name="author" content="Anshul Shah">
     <title>Anshul Shah | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Anshul Shah</h1>
+            <h1 class="gradient-text">Anshul Shah</h1>
             <p>Computer Science Student | Aspiring Software Engineer</p>
             <nav>
                 <ul>
@@ -27,62 +31,73 @@
     </header>
 
     <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Discover my projects, experience, and skills.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </section>
+
         <section id="about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>Hello! I'm Anshul, a Computer Science student at Purdue University, specializing in Machine Learning and Artificial Intelligence. Passionate about building impactful software solutions and exploring the latest technologies.</p>
+                <p>I’m Anshul, a Computer Science student specializing in Machine Learning and AI, dedicated to crafting innovative solutions for complex problems. With expertise in Python, React, and TensorFlow, I enjoy building systems that make a difference.</p>
             </div>
         </section>
 
         <section id="experience">
             <div class="container">
                 <h2>Experience</h2>
-                <div class="card">
-                    <h3>Teaching Assistant</h3>
-                    <p>Purdue Computer Science | Aug 2024 - Present</p>
-                    <p>Guided students through Unix/Linux commands, shell scripting, and Git workflows.</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Teaching Assistant</h3>
+                        <span>Aug 2024 – Present | Purdue Computer Science</span>
+                        <p>Guided students in Unix/Linux commands, shell scripting, and Git workflows.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Research Assistant</h3>
+                        <span>Sep 2023 – May 2024 | Purdue University</span>
+                        <p>Applied NLP techniques to analyze Federal Reserve announcements.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Research Assistant</h3>
-                    <p>Purdue University - Mitch E. Daniels School of Business | Sep 2023 - May 2024</p>
-                    <p>Applied NLP techniques to analyze Federal Reserve announcements.</p>
-                </div>
-                <!-- Add more experience here -->
             </div>
         </section>
 
         <section id="projects">
             <div class="container">
                 <h2>Projects</h2>
-                <div class="card">
-                    <h3>Fantasy Premier League AI Chatbot</h3>
-                    <p>Python, Flask, SQLite</p>
-                    <p>Developed an AI-powered chatbot for Fantasy Premier League recommendations.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Fantasy Premier League AI Chatbot</h3>
+                        <p>Python, Flask, SQLite</p>
+                        <p>Developed an AI-powered chatbot for Fantasy Premier League recommendations.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Library Management System</h3>
+                        <p>React.js, Node.js, MySQL</p>
+                        <p>Built a scalable full-stack web app for managing library records.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Library Management System</h3>
-                    <p>React.js, Node.js, MySQL</p>
-                    <p>Built a scalable full-stack web app for managing library records.</p>
-                </div>
-                <!-- Add more projects here -->
             </div>
         </section>
 
         <section id="skills">
             <div class="container">
                 <h2>Skills</h2>
-                <ul>
-                    <li>Languages: Python, Java, C++, JavaScript, SQL, R</li>
-                    <li>Frameworks: React.js, Node.js, TensorFlow, PyTorch</li>
-                    <li>Tools: Git, Docker, AWS, MongoDB</li>
-                    <li>AI/ML: NLP, Recommender Systems, Transformer Models</li>
+                <ul class="skills-list">
+                    <li>Python</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Machine Learning</li>
+                    <li>Data Analysis</li>
                 </ul>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
-                <h2>Contact</h2>
+                <h2>Contact Me</h2>
                 <p>Email: <a href="mailto:shahanshul@gmail.com">shahanshul@gmail.com</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/anshul-shah2" target="_blank">linkedin.com/in/anshul-shah2</a></p>
                 <p>GitHub: <a href="https://github.com/shahanshul8052" target="_blank">github.com/shahanshul8052</a></p>
@@ -91,9 +106,7 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Anshul Shah. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Anshul Shah. Built with ❤️.</p>
     </footer>
 </body>
 </html>
