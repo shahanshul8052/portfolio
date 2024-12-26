@@ -88,7 +88,6 @@ p {
 }
 
 .project-card {
-  display: flex;
   margin-bottom: 30px;
   background-color: #f9f9f9;
   padding: 20px;
@@ -101,19 +100,8 @@ p {
   transform: scale(1.05);
 }
 
-.project-image img {
-  width: 200px;
-  height: 150px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.project-content {
-  margin-left: 20px;
-}
-
 .project-content h3 {
-  font-size: 1.8em;
+  font-size: 2em;
   color: #333;
   margin-bottom: 10px;
 }
@@ -126,7 +114,6 @@ p {
 .project-link {
   color: #007bff;
   font-weight: bold;
-  font-size: 1.1em;
 }
 
 .project-link:hover {
