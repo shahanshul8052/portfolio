@@ -40,8 +40,13 @@ function App() {
         <div>
           <h2>What I Am Currently Doing</h2>
           <p>
-            I'm currently building an AI-powered chatbot for Fantasy Premier League using Python and Flask. The chatbot helps users make informed decisions based on real-time player stats and fixture analysis.
-          </p>
+            <li>
+              Working on an AI-powered chatbot to recommend Fantasy Premier League players based on real-time data and analysis.
+            </li>
+            <li>
+              Teaching assistant for CS 252: Systems Programming at Purdue University.
+            </li>
+                      </p>
         </div>
       </section>
 
@@ -102,7 +107,7 @@ function App() {
           {/* Experience 1 */}
           <div className="experience-card">
             <div className="experience-content">
-              <h3>Software Engineering Intern at TechCorp</h3>
+              <h3>Machine Learning Internship at AppUnik              </h3>
               <p><strong>Jun 2023 - Aug 2023</strong></p>
               <ul>
                 <li>Collaborated with a team to design and develop an AI-based customer service tool.</li>
@@ -115,7 +120,7 @@ function App() {
           {/* Experience 2 */}
           <div className="experience-card">
             <div className="experience-content">
-              <h3>Data Analyst Intern at DataInc</h3>
+              <h3></h3>
               <p><strong>Jan 2022 - May 2022</strong></p>
               <ul>
                 <li>Conducted data cleaning and preprocessing on large datasets.</li>
