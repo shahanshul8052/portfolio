@@ -18,6 +18,7 @@ function App() {
               <a href="#about" className="nav-link">About Me</a>
               <a href="#current" className="nav-link">Current Approaches</a>
               <a href="#projects" className="nav-link">Projects</a>
+              <a href="#experience" className="nav-link">Experience</a>
             </nav>
           </div>
         </div>
@@ -58,9 +59,8 @@ function App() {
             </div>
             <div className="project-content">
               <h3>Fantasy Premier League AI Chatbot</h3>
-              <p><strong>Project Page | GitHub |</strong> Jun 2023 - Present</p>
+              <p><strong>Project Page | <a href="https://github.com/yourusername/fpl-chatbot" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Jun 2023 - Present</p>
               <p>Built an AI-powered chatbot to recommend Fantasy Premier League players based on real-time data and analysis. The chatbot uses Flask for backend and BeautifulSoup for scraping live player statistics.</p>
-              <a href="https://github.com/yourusername/fpl-chatbot" className="project-link">GitHub</a>
             </div>
           </div>
 
@@ -73,9 +73,8 @@ function App() {
             </div>
             <div className="project-content">
               <h3>Library Management System</h3>
-              <p><strong>Project Page | GitHub |</strong> Jan 2023 - Apr 2023</p>
+              <p><strong>Project Page | <a href="https://github.com/yourusername/library-management" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Jan 2023 - Apr 2023</p>
               <p>Developed a full-stack library management system with React, Node.js, and MySQL to manage library records. The application allows users to search books, check-out books, and manage transactions efficiently.</p>
-              <a href="https://github.com/yourusername/library-management" className="project-link">GitHub</a>
             </div>
           </div>
 
@@ -88,10 +87,44 @@ function App() {
             </div>
             <div className="project-content">
               <h3>Machine Learning Internship at AppUnik</h3>
-              <p><strong>Internship | GitHub |</strong> Jun 2022 - Aug 2022</p>
+              <p><strong>Internship | <a href="https://github.com/yourusername/ml-internship" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Jun 2022 - Aug 2022</p>
               <p>Worked on building AI models for recommendation systems using TensorFlow and PyTorch. This experience involved handling large datasets, training models, and optimizing algorithms for better performance.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="section experience">
+        <div>
+          <h2>Experience</h2>
+
+          {/* Experience 1 */}
+          <div className="experience-card">
+            <div className="experience-content">
+              <h3>Software Engineering Intern at TechCorp</h3>
+              <p><strong>Jun 2023 - Aug 2023</strong></p>
+              <ul>
+                <li>Collaborated with a team to design and develop an AI-based customer service tool.</li>
+                <li>Implemented various machine learning algorithms to improve predictive accuracy.</li>
+                <li>Optimized backend systems, reducing load times by 30%.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Experience 2 */}
+          <div className="experience-card">
+            <div className="experience-content">
+              <h3>Data Analyst Intern at DataInc</h3>
+              <p><strong>Jan 2022 - May 2022</strong></p>
+              <ul>
+                <li>Conducted data cleaning and preprocessing on large datasets.</li>
+                <li>Built and tested predictive models using Scikit-Learn.</li>
+                <li>Visualized data insights to drive business strategy decisions.</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </section>
 
