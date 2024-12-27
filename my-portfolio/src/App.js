@@ -8,7 +8,7 @@ function App() {
       <header className="header">
         <div className="header-content">
           <img
-            src={process.env.PUBLIC_URL + "/dog-8198719_1280.webp"} 
+            src={process.env.PUBLIC_URL + "IMG_6651_Original.jpg"}
             alt="Anshul Shah"
             className="profile-image"
           />
