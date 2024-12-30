@@ -243,5 +243,31 @@ function App() {
     </div>
   );
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+});
+document.querySelectorAll('.nav-links a').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = e.target.getAttribute('href').slice(1);
+    const targetElement = document.getElementById(targetId);
+
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 
 export default App;

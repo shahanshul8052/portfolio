@@ -35,8 +35,35 @@ a {
 .header-content {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: flex-end; /* For aligning everything to the right */
+  text-align: right;
   gap: 20px;
 }
+
+.profile-image {
+  margin-right: auto; /* Keeps the profile picture on the left */
+}
+
+.header-text h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
 
 .profile-image {
   width: 110px;
@@ -44,16 +71,20 @@ a {
   border-radius: 50%;
   object-fit: cover;
   object-position: top center;
+  margin-right: auto;
 }
 
 .header-text h1 {
   font-size: 2.5em;
   font-weight: bold;
-  margin-bottom: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
 }
 
 .nav-links a {
-  margin-right: 20px;
   font-size: 1.1em;
   color: #333;
 }
@@ -65,10 +96,7 @@ a {
 /* Section Styles */
 .section {
   padding: 40px 20px;
-  margin-bottom: 60px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px; /* Adds equal spacing between sections */
 }
 
 h2 {
@@ -79,14 +107,14 @@ h2 {
 
 p {
   font-size: 1.1em;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #555;
+  margin-bottom: 20px;
 }
 
+
 /* Project Cards */
-.projects {
-  background-color: #fff;
-}
+
 
 .project-card {
   display: flex;
@@ -140,10 +168,7 @@ p {
   text-decoration: underline;
 }
 
-/* Experience Section */
-.experience {
-  background-color: #fff;
-}
+
 
 .experience-card {
   margin-bottom: 30px;
@@ -186,3 +211,141 @@ footer {
   color: #fff;
   margin-top: 60px;
 }
+
+body {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+h2 {
+  color: #007bff; /* Primary color for section headings */
+}
+
+a {
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #17a2b8; /* Accent color on hover */
+}
+
+.nav-links a {
+  color: #6c757d; /* Subtle gray for links */
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Highlighted color on hover */
+}
+
+.btn,
+.btnn2 {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.btnn2:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px); /* Subtle lift effect */
+}
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.profile-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+}
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.social-icons a {
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #17a2b8; /* Accent color */
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .section {
+    padding: 20px 10px;
+  }
+
+  .contact-content .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
