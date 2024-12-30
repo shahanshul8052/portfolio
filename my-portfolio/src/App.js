@@ -37,12 +37,17 @@ function App() {
         <div>
           <h2>About Me</h2>
           <p>
-            I am a current senior at Purdue University, studying Computer
-            Science, with specializations in Machine Learning/Artificial
-            Intelligence and a Minor in Management. My interests lie in software
-            engineering and machine learning, and I am passionate about
-            leveraging these fields to create innovative solutions that have a
-            meaningful impact on my community.
+            Hello! I am a current senior at Purdue University, majoring in Computer
+            Science, fueld with a passion for problem-solving and making an impact with technology
+            Using creativity and technical expertise, I love bringing ideas to life
+            At Purdue, I am specializing in Machine Learning/Artificial
+            Intelligence with a Minor in Management. My interests lie in software
+            engineering and machine learning. 
+            Outside of academics, I enjoy playing soccer, reading books, and
+            spending time with friends and family. Growing up in the midst of Dallas,
+            I became an avid Mavericks fan and discovered my love for traveling, and finding
+            new places. these allowed me to stay active and engaged both on and off campus. 
+            Follow along as I share my journey as a Computer Scientist
           </p>
         </div>
       </section>
