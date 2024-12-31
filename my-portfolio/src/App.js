@@ -19,7 +19,7 @@ function App() {
                 About Me
               </a>
               <a href="#current" className="nav-link">
-                Current Approaches
+                Ongoing Projects
               </a>
               <a href="#projects" className="nav-link">
                 Projects
@@ -55,15 +55,18 @@ function App() {
       {/* Current Projects Section */}
       <section id="current" className="section current">
         <div>
-          <h2>What I Am Currently Doing</h2>
+          <h2>Current Endeavors</h2>
           <p>
             <li>
-              Working on an AI-powered chatbot to recommend Fantasy Premier
-              League players based on real-time data and analysis.
+              Developing an AI-powered chatbot to recommend Fantasy Premier
+              League players using real-time data and analysis.
             </li>
             <li>
-              Teaching assistant for CS 252: Systems Programming at Purdue
+              Serving as a Teaching assistant for CS 252: Systems Programming at Purdue
               University.
+            </li>
+            <li>
+              Currently Reading <i>Crime and Punishment</i> by Fyodor Dostoevsky.
             </li>
           </p>
         </div>
@@ -78,12 +81,12 @@ function App() {
           <div className="project-card">
             <div className="project-image">
               <a
-                href="https://github.com/yourusername/fpl-chatbot"
+                href="https://github.com/shahanshul8052/aichatbot"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src={process.env.PUBLIC_URL + "/fpl-chatbot-image.webp"}
+                  src={"./fpl.jpg"}
                   alt="FPL Chatbot"
                 />
               </a>
@@ -94,7 +97,7 @@ function App() {
                 <strong>
                   Project Page |{" "}
                   <a
-                    href="https://github.com/yourusername/fpl-chatbot"
+                    href="https://github.com/shahanshul8052/aichatbot"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -102,13 +105,12 @@ function App() {
                   </a>{" "}
                   |
                 </strong>{" "}
-                Jun 2023 - Present
+                Dec 2024 - Jan 2025
               </p>
               <p>
-                Built an AI-powered chatbot to recommend Fantasy Premier League
-                players based on real-time data and analysis. The chatbot uses
-                Flask for backend and BeautifulSoup for scraping live player
-                statistics.
+              Developed an AI-powered Fantasy Premier League chatbot using Selenium for live data scraping, 
+              SQLite for data management, 
+              and Flask APIs for dynamic player recommendations.
               </p>
             </div>
           </div>
@@ -117,13 +119,13 @@ function App() {
           <div className="project-card">
             <div className="project-image">
               <a
-                href="https://github.com/yourusername/library-management"
+                href="https://github.com/shahanshul8052/cs348-db"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
                   src={
-                    process.env.PUBLIC_URL + "/library-management-image.webp"
+                    "./lib.png"
                   }
                   alt="Library Management System"
                 />
@@ -133,9 +135,9 @@ function App() {
               <h3>Library Management System</h3>
               <p>
                 <strong>
-                  Project Page |{" "}
+                  
                   <a
-                    href="https://github.com/yourusername/library-management"
+                    href="https://github.com/shahanshul8052/cs348-db"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -143,7 +145,7 @@ function App() {
                   </a>{" "}
                   |
                 </strong>{" "}
-                Jan 2023 - Apr 2023
+                Feb 2024 - Apr 2024
               </p>
               <p>
                 Developed a full-stack library management system with React,
@@ -158,23 +160,22 @@ function App() {
           <div className="project-card">
             <div className="project-image">
               <a
-                href="https://github.com/yourusername/ml-internship"
+                href="https://github.com/shahanshul8052/nba_visualization"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src={process.env.PUBLIC_URL + "/ml-internship-image.webp"}
-                  alt="Machine Learning Internship"
+                  src={"./DV.jpg"}
+                  alt="Data Vis"
                 />
               </a>
             </div>
             <div className="project-content">
-              <h3>Machine Learning Internship at AppUnik</h3>
+              <h3>NBA Data Visualization</h3>
               <p>
                 <strong>
-                  Internship |{" "}
                   <a
-                    href="https://github.com/yourusername/ml-internship"
+                    href="https://github.com/shahanshul8052/nba_visualization"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -182,13 +183,14 @@ function App() {
                   </a>{" "}
                   |
                 </strong>{" "}
-                Jun 2022 - Aug 2022
+                Nov 2024 - Dec 2024
               </p>
               <p>
-                Worked on building AI models for recommendation systems using
-                TensorFlow and PyTorch. This experience involved handling large
-                datasets, training models, and optimizing algorithms for better
-                performance.
+              Developed an interactive Fantasy Basketball Dashboard using Python, PyQt6, Matplotlib, and Pandas, 
+              integrating the NBA API for real-time and historical data. 
+              <br></br>
+              Dashboard allows users to visualize player performance, generate matchup insights, and 
+              compare players, providing data insights for Fantasy Basketball enthusiasts.
               </p>
             </div>
           </div>
