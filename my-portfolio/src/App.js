@@ -78,7 +78,7 @@ function App() {
               traveling and finding new places. These allowed me to stay active
               and engaged both on and off campus.
             </p>
-            <p>Follow along as I share my journey as a Computer Scientist.</p>
+            <p>Follow along as I share my journey</p>
           </div>
         </div>
       </section>
@@ -147,43 +147,7 @@ function App() {
             </div>
           </div>
 
-          {/* Project 2 */}
-          <div className="project-card">
-            <div className="project-image">
-              <a
-                href="https://github.com/shahanshul8052/cs348-db"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={`${process.env.PUBLIC_URL}/lib.png`}
-                  alt="Library Management System"
-                />
-              </a>
-            </div>
-            <div className="project-content">
-              <h3>Library Management System</h3>
-              <p>
-                <strong>
-                  <a
-                    href="https://github.com/shahanshul8052/cs348-db"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>{" "}
-                  |
-                </strong>{" "}
-                Feb 2024 - Apr 2024
-              </p>
-              <p>
-                Developed a full-stack library management system with React,
-                Node.js, and MySQL to manage library records. The application
-                allows users to search books, check-out books, and manage
-                transactions efficiently.
-              </p>
-            </div>
-          </div>
+          
 
           {/* Project 3 */}
           <div className="project-card">
@@ -260,6 +224,43 @@ function App() {
                 <br></br>
                 Project leverages deep learning models for real time face
                 detection
+              </p>
+            </div>
+          </div>
+          {/* Project 2 */}
+          <div className="project-card">
+            <div className="project-image">
+              <a
+                href="https://github.com/shahanshul8052/cs348-db"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/lib.png`}
+                  alt="Library Management System"
+                />
+              </a>
+            </div>
+            <div className="project-content">
+              <h3>Library Management System</h3>
+              <p>
+                <strong>
+                  <a
+                    href="https://github.com/shahanshul8052/cs348-db"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>{" "}
+                  |
+                </strong>{" "}
+                Feb 2024 - Apr 2024
+              </p>
+              <p>
+                Developed a full-stack library management system with React,
+                Node.js, and MySQL to manage library records. The application
+                allows users to search books, check-out books, and manage
+                transactions efficiently.
               </p>
             </div>
           </div>
@@ -424,28 +425,28 @@ function App() {
       Feel free to reach out to me through any of the platforms below. I’m always excited to connect!
     </p>
     <ul className="contact-list">
-      <li>
-        <a href="mailto:shahanshul@gmail.com" className="contact-link">
-          <i className="fas fa-envelope"></i> Email: shahanshul@gmail.com
-        </a>
-      </li>
-      <li>
-        <a href="https://linkedin.com/in/anshul-shah2" target="_blank" rel="noopener noreferrer" className="contact-link">
-          <i className="fab fa-linkedin"></i> LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/shahanshul8052" target="_blank" rel="noopener noreferrer" className="contact-link">
-          <i className="fab fa-github"></i> GitHub
-        </a>
-      </li>
-    </ul>
+  <li>
+    <a href="mailto:shahanshul@gmail.com" className="contact-link">
+      <i className="fas fa-envelope"></i> Email
+    </a>
+  </li>
+  <li>
+    <a href="https://linkedin.com/in/anshul-shah2" target="_blank" rel="noopener noreferrer" className="contact-link">
+      <i className="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/shahanshul8052" target="_blank" rel="noopener noreferrer" className="contact-link">
+      <i className="fab fa-github"></i> GitHub
+    </a>
+  </li>
+</ul>
   </div>
 </section>
 
 
       {/* Footer */}
-<footer>
+      <footer>
   <p>&copy; 2024 Anshul Shah</p>
   <div className="social-icons">
     <a href="https://linkedin.com/in/anshul-shah2" target="_blank" rel="noopener noreferrer" className="social-link">
@@ -458,7 +459,17 @@ function App() {
       <i className="fas fa-envelope"></i>
     </a>
   </div>
+  <div className="resume-download">
+    <a
+      href={`${process.env.PUBLIC_URL}/resume.pdf`}
+      download="Anshul_Shah_Resume.pdf"
+      className="download-link"
+    >
+      <i className="fas fa-file-download"></i> Download Resume
+    </a>
+  </div>
 </footer>
+
 
     </div>
   );

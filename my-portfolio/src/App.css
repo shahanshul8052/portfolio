@@ -250,48 +250,38 @@ p {
   line-height: 1.6;
 }
 
-/* Contact Section */
-.contact {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-}
-
-.contact h2 {
-  font-size: 2em;
-  color: #007bff;
-  margin-bottom: 20px;
-}
-
-.contact p {
-  font-size: 1.2em;
-  color: #333;
-  margin-bottom: 20px;
-}
-
 .contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Space between items */
   list-style: none;
   padding: 0;
+  margin-top: 20px;
 }
 
 .contact-list li {
-  margin: 10px 0;
+  text-align: center;
 }
 
 .contact-link {
-  font-size: 1.2em;
-  color: #007bff;
   text-decoration: none;
-  transition: color 0.3s;
-}
-
-.contact-link i {
-  margin-right: 10px;
+  color: #007bff;
+  font-size: 1.2em;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .contact-link:hover {
   color: #0056b3;
+  transform: scale(1.1); /* Slight zoom effect */
 }
+
+.contact-link i {
+  font-size: 2em; /* Larger icons */
+  margin-bottom: 5px;
+  display: block; /* Icon above text */
+}
+
 
 /* Footer */
 footer {
@@ -316,6 +306,27 @@ footer .social-link:hover {
   color: #007bff;
 }
 
+.resume-download {
+  margin-top: 15px;
+}
+
+.resume-download .download-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.resume-download .download-link:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -358,7 +369,15 @@ footer .social-link:hover {
   }
 
   .experience-card {
-    align-items: center;
+    flex-direction: column; /* Stack image and content vertically */
     text-align: center;
+  }
+
+  .experience-image {
+    margin: 0 auto; /* Center the image */
+  }
+
+  .experience-content {
+    margin-top: 15px; /* Add space between the image and content */
   }
 }
