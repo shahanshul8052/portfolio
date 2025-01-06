@@ -227,6 +227,33 @@ function App() {
               </p>
             </div>
           </div>
+          {/* Shell Project Section */}
+<div className="project-card">
+  <div className="project-image">
+    <a
+    >
+      <img
+        src={`${process.env.PUBLIC_URL}/cli.png`}
+        alt="Shell Project"
+      />
+    </a>
+  </div>
+  <div className="project-content">
+    <h3>Shell Project</h3>
+    <p>
+      Mar 2024 - Apr 2024
+    </p>
+    <p>
+      Designed and implemented a custom Unix-like shell using C++ to provide core functionalities such as:
+      <ul>
+        <li>Support for piping, I/O redirection, and background processes.</li>
+        <li>Signal handling, process management, and environment variable manipulation.</li>
+        <li>Interactive features like conditional statements and loops for enhanced usability.</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
           {/* Project 2 */}
           <div className="project-card">
             <div className="project-image">
