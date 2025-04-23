@@ -127,7 +127,7 @@ function App() {
               <h3>Fantasy Premier League AI Chatbot</h3>
               <p>
                 <strong>
-                  Project Page |{" "}
+                  
                   <a
                     href="https://github.com/shahanshul8052/aichatbot"
                     target="_blank"
