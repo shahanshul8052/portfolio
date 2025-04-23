@@ -109,24 +109,24 @@ function App() {
         <div className="content">
           <h2>Projects</h2>
 
-    <div className="project-card">
-      <div className="project-image">
-        <a href="https://github.com/shahanshul8052/civic-scraper" target="_blank" rel="noopener noreferrer">
-          <img src={`${process.env.PUBLIC_URL}/civic.png`} alt="Civic Scraper" />
-        </a>
-      </div>
-      <div className="project-content">
-        <h3>Civic Data Scraper (Orca Startup)</h3>
-        <p><strong><a href="https://github.com/shahanshul8052/civic-scraper" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Apr 2025 – Present</p>
-        <p>
-          Leading development of a civic data pipeline that scrapes, parses, and standardizes city meeting videos, agendas, and transcripts into structured JSON.
-          <br />
-          Built modular scrapers with Selenium, yt-dlp, and Vimeo/YouTube API integration.
-          <br />
-          Designed reusable architecture with Python and Pandas for flexible expansion across cities.
-        </p>
-      </div>
-    </div>
+          <div className="project-card">
+            <div className="project-image">
+              <a href="https://github.com/shahanshul8052/civic-scraper" target="_blank" rel="noopener noreferrer">
+                <img src={`${process.env.PUBLIC_URL}/civic.png`} alt="Civic Scraper" />
+              </a>
+            </div>
+            <div className="project-content">
+              <h3>Civic Data Scraper (Orca Startup)</h3>
+              <p><strong><a href="https://github.com/shahanshul8052/civic-scraper" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Apr 2025 – Present</p>
+              <p>
+                Leading development of a civic data pipeline that scrapes, parses, and standardizes city meeting videos, agendas, and transcripts into structured JSON.
+                <br />
+                Built modular scrapers with Selenium, yt-dlp, and Vimeo/YouTube API integration.
+                <br />
+                Designed reusable architecture with Python and Pandas for flexible expansion across cities.
+              </p>
+            </div>
+          </div>
 
 
           <div className="project-card">
