@@ -63,22 +63,15 @@ function App() {
           <div className="content">
             <h2>About Me</h2>
             <p>
-              Hello! I am a current senior at Purdue University, majoring in
-              Computer Science, fueled with a passion for problem-solving and
-              making an impact with technology. Using creativity and technical
-              expertise, I love bringing ideas to life. At Purdue, I am
-              specializing in Machine Learning/Artificial Intelligence with a
-              Minor in Management. My interests lie in software engineering and
-              machine learning.
+              I'm a senior studying Computer Science at Purdue University, with a concentration in Machine Learning and a minor in Management. My interests lie at the intersection of AI, software engineering, and civic technology.
             </p>
             <p>
-              Outside of academics, I enjoy playing soccer, reading books, and
-              spending time with friends and family. Growing up in the midst of
-              Dallas, I became an avid Mavericks fan and discovered my love for
-              traveling and finding new places. These allowed me to stay active
-              and engaged both on and off campus.
+              I'm currently helping out for <strong>Insighter</strong>, a civic data startup focused on scraping and standardizing city meeting content (videos, agendas, transcripts) into a searchable, structured format. Our pipeline is designed for scale — built using Python, Selenium, and YouTube/Vimeo APIs.
             </p>
-            <p>Follow along as I share my journey</p>
+            <p>
+              Previously, I interned at <strong>AppUnik</strong>, where I built and deployed GPT-powered recommendation systems using FastAPI, Redis, and Hugging Face Transformers — optimizing for performance with AWS Lambda and vector search.
+            </p>
+            <p>Follow along as I share my journey!</p>
           </div>
         </div>
       </section>
@@ -88,18 +81,10 @@ function App() {
         <div className="content">
           <h2>Current Endeavors</h2>
           <ul>
-            <li>
-              Developing an AI-powered chatbot to recommend Fantasy Premier
-              League players using real-time data and analysis.
-            </li>
-            <li>
-              Serving as a Teaching Assistant for CS 252: Systems Programming at
-              Purdue University.
-            </li>
-            <li>
-              Currently Reading <i>Crime and Punishment</i> by Fyodor
-              Dostoevsky.
-            </li>
+          <li>Building and scaling Orca, a civic data startup standardizing city meeting content into searchable formats.</li>
+          <li>Developing a Spotify Clone with AI music summaries using GPT-4 and Hugging Face.</li>
+          <li>Serving as a Teaching Assistant for CS 252: Systems Programming.</li>
+          <li>Currently reading <i>Crime and Punishment</i> by Fyodor Dostoevsky.</li>
           </ul>
         </div>
       </section>
@@ -111,13 +96,11 @@ function App() {
 
           <div className="project-card">
             <div className="project-image">
-              <a href="https://github.com/shahanshul8052/civic-scraper" target="_blank" rel="noopener noreferrer">
                 <img src={`${process.env.PUBLIC_URL}/civic.png`} alt="Civic Scraper" />
-              </a>
             </div>
             <div className="project-content">
               <h3>Civic Data Scraper (Orca Startup)</h3>
-              <p><strong><a href="https://github.com/shahanshul8052/civic-scraper" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Apr 2025 – Present</p>
+              <p>Apr 2025 – Present</p>
               <p>
                 Leading development of a civic data pipeline that scrapes, parses, and standardizes city meeting videos, agendas, and transcripts into structured JSON.
                 <br />
