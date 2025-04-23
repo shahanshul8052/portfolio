@@ -96,7 +96,7 @@ function App() {
 
           <div className="project-card">
             <div className="project-image">
-                <img src={`${process.env.PUBLIC_URL}/civic.png`} alt="Civic Scraper" />
+                <img src={`${process.env.PUBLIC_URL}/insighter.png`} alt="Civic Scraper" />
             </div>
             <div className="project-content">
               <h3>Civic Data Scraper (Orca Startup)</h3>
@@ -114,13 +114,13 @@ function App() {
 
           <div className="project-card">
             <div className="project-image">
-              <a href="https://github.com/shahanshul8052/spotify-ai" target="_blank" rel="noopener noreferrer">
-                <img src={`${process.env.PUBLIC_URL}/spotifyclone.png`} alt="Spotify Clone + AI Music Summary" />
+              <a href="https://github.com/shahanshul8052/vibeify" target="_blank" rel="noopener noreferrer">
+                <img src={`${process.env.PUBLIC_URL}/vibeify.png`} alt="Spotify Clone + AI Music Summary" />
               </a>
             </div>
             <div className="project-content">
               <h3>Spotify Clone + AI Music Summary</h3>
-              <p><strong><a href="https://github.com/shahanshul8052/spotify-ai" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Mar 2025 – Present</p>
+              <p><strong><a href="https://github.com/shahanshul8052/vibeify" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Mar 2025 – Present</p>
               <p>
                 Built a full-stack music streaming app with playlist creation, authentication, and music playback using React, Redux, Node.js, and Firebase.
                 <br />
