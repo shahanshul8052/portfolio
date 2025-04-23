@@ -109,6 +109,45 @@ function App() {
         <div className="content">
           <h2>Projects</h2>
 
+    <div className="project-card">
+      <div className="project-image">
+        <a href="https://github.com/shahanshul8052/civic-scraper" target="_blank" rel="noopener noreferrer">
+          <img src={`${process.env.PUBLIC_URL}/civic.png`} alt="Civic Scraper" />
+        </a>
+      </div>
+      <div className="project-content">
+        <h3>Civic Data Scraper (Orca Startup)</h3>
+        <p><strong><a href="https://github.com/shahanshul8052/civic-scraper" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Apr 2025 – Present</p>
+        <p>
+          Leading development of a civic data pipeline that scrapes, parses, and standardizes city meeting videos, agendas, and transcripts into structured JSON.
+          <br />
+          Built modular scrapers with Selenium, yt-dlp, and Vimeo/YouTube API integration.
+          <br />
+          Designed reusable architecture with Python and Pandas for flexible expansion across cities.
+        </p>
+      </div>
+    </div>
+
+
+          <div className="project-card">
+            <div className="project-image">
+              <a href="https://github.com/shahanshul8052/spotify-ai" target="_blank" rel="noopener noreferrer">
+                <img src={`${process.env.PUBLIC_URL}/spotifyclone.png`} alt="Spotify Clone + AI Music Summary" />
+              </a>
+            </div>
+            <div className="project-content">
+              <h3>Spotify Clone + AI Music Summary</h3>
+              <p><strong><a href="https://github.com/shahanshul8052/spotify-ai" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Mar 2025 – Present</p>
+              <p>
+                Built a full-stack music streaming app with playlist creation, authentication, and music playback using React, Redux, Node.js, and Firebase.
+                <br />
+                Integrated GPT-4 for automatic music summaries and playlist captions using Hugging Face and OpenAI APIs.
+                <br />
+                Dockerized and deployed with AWS + CI/CD via GitHub Actions.
+              </p>
+            </div>
+          </div>
+
           {/* Project 1 */}
           <div className="project-card">
             <div className="project-image">
