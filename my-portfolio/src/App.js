@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 
+
 function App() {
   // Add scroll animation with IntersectionObserver
   useEffect(() => {
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div className="page">
-      {/* Header Section */}
+      {/* Header Section
       <header className="header">
         <div className="header-content">
           <div className="header-text">
@@ -50,9 +51,37 @@ function App() {
             </nav>
           </div>
         </div>
-      </header>
+      </header> */}
 
-      {/* About Me Section */}
+<section className="hero-section section visible">
+  <div className="hero-top-row">
+    <div className="hero-photo">
+      <img
+        src={`${process.env.PUBLIC_URL}/IMG_6651_Original.jpg`}
+        alt="Anshul Shah"
+        className="profile-image-circle"
+      />
+    </div>
+    <div className="hero-info">
+      <h1>Anshul Shah</h1>
+      <h2>CS @ Purdue · ML, Systems, Civic Tech</h2>
+    </div>
+    <div className="hero-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+  </div>
+
+  <p className="hero-description">
+      I'm a recent Purdue CS grad with a focus in machine learning and a minor in management—currently working on integrations at Sally Beauty. My background spans full-stack development, ML/AI, and civic tech. I'm passionate about simplifying complex systems and building tools that drive real-world impact.
+
+  </p>
+</section>
+
+      {/* About Me Section
       <section id="about" className="section about">
         <div className="about-container">
           <img
@@ -74,400 +103,136 @@ function App() {
             <p>Follow along as I share my journey!</p>
           </div>
         </div>
+      </section> */}
+
+      <section id="about" className="current-work">
+        <h2>What I'm Doing</h2>
+        <ul>
+          <li>
+      Working as a Software Engineer at Sally Beauty in Dallas, focused on building internal tools and improving developer experiences.
+    </li>
+    <li>
+      Previously contributed to Insighter, a civic tech startup, where I helped design tools to structure and search government meeting data.
+    </li>
+    <li>
+      Served as a Teaching Assistant for Systems Programming at Purdue, and conducted research applying natural language processing to economic data.
+    </li>
+          <li>
+            Reading <i>Siddartha</i> and learning more about enterprise architecture.
+          </li>
+        </ul>
       </section>
 
-      {/* Current Projects Section */}
-      <section id="current" className="section current">
-        <div className="content">
-          <h2>Current Endeavors</h2>
-          <ul>
-          <li>Building and scaling Orca, a civic data startup standardizing city meeting content into searchable formats.</li>
-          <li>Developing a Spotify Clone with AI music summaries using GPT-4 and Hugging Face.</li>
-          <li>Serving as a Teaching Assistant for CS 252: Systems Programming.</li>
-          <li>Currently reading <i>Crime and Punishment</i> by Fyodor Dostoevsky.</li>
-          </ul>
-        </div>
-      </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="section projects">
-        <div className="content">
-          <h2>Projects</h2>
+      <section id="projects" className="projects-section section">
+  <h2>Projects</h2>
+  <div className="project-list">
+    <div className="project-item">
+      <strong>Civic Data Scraper (Orca Startup)</strong>
+      <p>Leading scalable pipeline for scraping and standardizing city meeting data using Python, Selenium, yt-dlp, and YouTube/Vimeo APIs.</p>
+    </div>
 
-          <div className="project-card">
-            <div className="project-image">
-                <img src={`${process.env.PUBLIC_URL}/insighter.png`} alt="Civic Scraper" />
-            </div>
-            <div className="project-content">
-              <h3>Civic Data Scraper (Orca Startup)</h3>
-              <p>Apr 2025 – Present</p>
-              <p>
-                Leading development of a civic data pipeline that scrapes, parses, and standardizes city meeting videos, agendas, and transcripts into structured JSON.
-                <br />
-                Built modular scrapers with Selenium, yt-dlp, and Vimeo/YouTube API integration.
-                <br />
-                Designed reusable architecture with Python and Pandas for flexible expansion across cities.
-              </p>
-            </div>
-          </div>
+    <div className="project-item">
+      <a href="https://github.com/shahanshul8052/aichatbot" target="_blank" rel="noopener noreferrer">
+        Fantasy Premier League Chatbot
+      </a>
+      <p>Flask-based assistant recommending FPL players using Selenium + SQLite for data scraping and storage.</p>
+    </div>
 
+    <div className="project-item">
+      <a href="https://github.com/shahanshul8052/nba_visualization" target="_blank" rel="noopener noreferrer">
+        NBA Data Visualization
+      </a>
+      <p>Built PyQt6 dashboard to visualize NBA player performance with Matplotlib + real-time data APIs.</p>
+    </div>
 
-          <div className="project-card">
-            <div className="project-image">
-              <a href="https://github.com/shahanshul8052/vibeify" target="_blank" rel="noopener noreferrer">
-                <img src={`${process.env.PUBLIC_URL}/vibeify.png`} alt="Spotify Clone + AI Music Summary" />
-              </a>
-            </div>
-            <div className="project-content">
-              <h3>Spotify Clone + AI Music Summary</h3>
-              <p><strong><a href="https://github.com/shahanshul8052/vibeify" target="_blank" rel="noopener noreferrer">GitHub</a> |</strong> Mar 2025 – Present</p>
-              <p>
-                Built a full-stack music streaming app with playlist creation, authentication, and music playback using React, Redux, Node.js, and Firebase.
-                <br />
-                Integrated GPT-4 for automatic music summaries and playlist captions using Hugging Face and OpenAI APIs.
-                <br />
-                Dockerized and deployed with AWS + CI/CD via GitHub Actions.
-              </p>
-            </div>
-          </div>
+    <div className="project-item">
+      <a href="https://github.com/shahanshul8052/MLProjects" target="_blank" rel="noopener noreferrer">
+        Facial Detection
+      </a>
+      <p>Deep learning model for real-time facial detection using OpenCV, TensorFlow, and Python.</p>
+    </div>
 
-          {/* Project 1 */}
-          <div className="project-card">
-            <div className="project-image">
-              <a
-                href="https://github.com/shahanshul8052/aichatbot"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={`${process.env.PUBLIC_URL}/fpl.jpg`}
-                  alt="Fantasy Premier League Chatbot"
-                />
-              </a>
-            </div>
-            <div className="project-content">
-              <h3>Fantasy Premier League AI Chatbot</h3>
-              <p>
-                <strong>
-                  
-                  <a
-                    href="https://github.com/shahanshul8052/aichatbot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>{" "}
-                  |
-                </strong>{" "}
-                Dec 2024 - Jan 2025
-              </p>
-              <p>
-                Developed an AI-powered Fantasy Premier League chatbot using
-                Selenium for live data scraping, SQLite for data management, and
-                Flask APIs for dynamic player recommendations.
-              </p>
-            </div>
-          </div>
+    <div className="project-item">
+      <strong>Shell Project</strong>
+      <p>Custom Unix-like shell in C++ with support for piping, I/O redirection, background processes, and control flow (loops/conditionals).</p>
+    </div>
 
-          
-
-          {/* Project 3 */}
-          <div className="project-card">
-            <div className="project-image">
-              <a
-                href="https://github.com/shahanshul8052/nba_visualization"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={`${process.env.PUBLIC_URL}/DV.png`}
-                  alt="NBA Data Visualization"
-                />
-              </a>
-            </div>
-            <div className="project-content">
-              <h3>NBA Data Visualization</h3>
-              <p>
-                <strong>
-                  <a
-                    href="https://github.com/shahanshul8052/nba_visualization"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>{" "}
-                  |
-                </strong>{" "}
-                Nov 2024 - Dec 2024
-              </p>
-              <p>
-                Developed an interactive Fantasy Basketball Dashboard using
-                Python, PyQt6, Matplotlib, and Pandas, integrating the NBA API
-                for real-time and historical data.
-                <br></br>
-                Dashboard allows users to visualize player performance, generate
-                matchup insights, and compare players, providing data insights
-                for Fantasy Basketball enthusiasts.
-              </p>
-            </div>
-          </div>
-          {/* Project 4 */}
-          <div className="project-card">
-            <div className="project-image">
-              <a
-                href="https://github.com/shahanshul8052/MLProjects"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={`${process.env.PUBLIC_URL}/6154.webp`}
-                  alt="Facial Detection"
-                />
-              </a>
-            </div>
-            <div className="project-content">
-              <h3>Facial Detection</h3>
-              <p>
-                <strong>
-                  <a
-                    href="https://github.com/shahanshul8052/MLProjects"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>{" "}
-                  |
-                </strong>{" "}
-                June 2024
-              </p>
-              <p>
-                Developed a facial detection model using OpenCV, Python, and
-                Tensorflow.
-                <br></br>
-                Project leverages deep learning models for real time face
-                detection
-              </p>
-            </div>
-          </div>
-          {/* Shell Project Section */}
-<div className="project-card">
-  <div className="project-image">
-    <a
-    >
-      <img
-        src={`${process.env.PUBLIC_URL}/cli.png`}
-        alt="Shell Project"
-      />
-    </a>
+    <div className="project-item">
+      <a href="https://github.com/shahanshul8052/cs348-db" target="_blank" rel="noopener noreferrer">
+        Library Management System
+      </a>
+      <p>Full-stack app with React, Node.js, and MySQL for searching, checking out, and managing book transactions.</p>
+    </div>
   </div>
-  <div className="project-content">
-    <h3>Shell Project</h3>
-    <p>
-      Mar 2024 - Apr 2024
-    </p>
-    <p>
-      Designed and implemented a custom Unix-like shell using C++ to provide core functionalities such as:
-      <ul>
-        <li>Support for piping, I/O redirection, and background processes.</li>
-        <li>Signal handling, process management, and environment variable manipulation.</li>
-        <li>Interactive features like conditional statements and loops for enhanced usability.</li>
-      </ul>
-    </p>
-  </div>
+</section>
+
+
+      <section id="experience" className="experience-section">
+<h2>Experience</h2>
+<div className="experience-list">
+<div className="experience-item">
+<div className="experience-item">
+  <strong>Sally Beauty Holdings</strong> – Software Engineer (June 2025 – Present)
+  <p>
+        Modernizing internal systems by building APIs with Node.js and MuleSoft across order management and customer platforms. Supporting Sally’s digital transformation with scalable backend infrastructure.
+
+  </p>
 </div>
 
-          {/* Project 2 */}
-          <div className="project-card">
-            <div className="project-image">
-              <a
-                href="https://github.com/shahanshul8052/cs348-db"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={`${process.env.PUBLIC_URL}/lib.png`}
-                  alt="Library Management System"
-                />
-              </a>
-            </div>
-            <div className="project-content">
-              <h3>Library Management System</h3>
-              <p>
-                <strong>
-                  <a
-                    href="https://github.com/shahanshul8052/cs348-db"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>{" "}
-                  |
-                </strong>{" "}
-                Feb 2024 - Apr 2024
-              </p>
-              <p>
-                Developed a full-stack library management system with React,
-                Node.js, and MySQL to manage library records. The application
-                allows users to search books, check-out books, and manage
-                transactions efficiently.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+</div>
 
-      {/* Experience Section */}
-      <section id="experience" className="section experience">
-        <div className="content">
-          <h2>Experience</h2>
 
-          {/* Experience 1 */}
-          <div className="experience-card">
-            <img
-              src={`${process.env.PUBLIC_URL}/purdue.png`}
-              alt="Teaching Assistant"
-              className="experience-image"
-            />
-            <div className="experience-content">
-              <h3>Teaching Assistant</h3>
-              <p>
-                <strong>Purdue Computer Science</strong> |{" "}
-                <strong>Aug 2024 – Present</strong>
-              </p>
-              <ul>
-                <li>
-                  Facilitated weekly Problem-Solving (PSO) sessions for CS 193,
-                  focusing on Unix/Linux commands, shell scripting, and version
-                  control using Git.
-                </li>
-                <li>
-                  Evaluated student assignments and delivered actionable
-                  feedback, ensuring proficiency in debugging and advanced text
-                  editing tools like Vim.
-                </li>
-              </ul>
-            </div>
-          </div>
+<div className="experience-item">
+<strong>Insighter (Startup)</strong> – Backend Developer (Apr 2025 – June 2025)
+<p>
+Scraping, cleaning, and structuring city council meeting data using Python, Selenium, and yt-dlp.
+Improving onboarding time with modular architecture and regex/NLP tools.
+</p>
+</div>
 
-          {/* Experience 2 */}
-          <div className="experience-card">
-            <img
-              src={`${process.env.PUBLIC_URL}/research.png`}
-              alt="research"
-              className="experience-image"
-            />
-            <div className="experience-content">
-              <h3>Research Assistant</h3>
-              <p>
-                <strong>
-                  Purdue University - Mitch E. Daniels School of Business
-                </strong>{" "}
-                | <strong>Sep 2023 – May 2024</strong>
-              </p>
-              <ul>
-                <li>
-                  Conducted NLP analysis on a dataset of 1,000+ financial
-                  articles to assess the impact of Federal Reserve statements on
-                  economic indicators.
-                </li>
-                <li>
-                  Leveraged Python and machine learning frameworks for sentiment
-                  analysis and predictive modeling to uncover market insights.
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          {/* Experience 3 */}
-          <div className="experience-card">
-            <img
-              src={`${process.env.PUBLIC_URL}/image.png`}
-              alt="ML Intern"
-              className="experience-image"
-            />
+<div className="experience-item">
+<strong>Purdue University</strong> – Research Assistant (Sep 2023 – May 2024)
+<p>
+Used GPT-based summarization + TF-IDF scoring to classify Fed speeches as hawkish/dovish/neutral.
+Built NLP pipeline for sentiment trend tracking and economic impact analysis.
+</p>
+</div>
 
-            <div className="experience-content">
-              <h3>Machine Learning Intern</h3>
-              <p>
-                <strong>AppUnik - AI Solutions and Predictive Models</strong> |{" "}
-                <strong>Sep 2022 – Aug 2023</strong>
-              </p>
-              <ul>
-                <li>
-                  Designed and deployed an LLM-driven recommendation engine for
-                  personalized content delivery, utilizing GPT fine-tuning.
-                </li>
-                <li>
-                  Built comprehensive AI pipelines incorporating TensorFlow,
-                  PyTorch, and Hugging Face for text and image processing tasks.
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          {/* Experience 4 */}
-          <div className="experience-card">
-            <img
-              src={`${process.env.PUBLIC_URL}/battelle.jpg`}
-              alt="Data Research Assistant"
-              className="experience-image"
-            />
-            <div className="experience-content">
-              <h3>Software Engineering Intern</h3>
-              <p>
-                <strong>
-                  Battelle - Algorithm Development for Biodetection Platform
-                </strong>{" "}
-                | <strong>Aug 2022 – May 2023</strong>
-              </p>
-              <ul>
-                <li>
-                  Engineered Python-based models for hazard detection, achieving
-                  a 25% improvement in accuracy and a 20% reduction in false
-                  positives.
-                </li>
-                <li>
-                  Collaborated with cross-functional teams in an Agile
-                  environment to ensure the on-time delivery of robust
-                  solutions.
-                </li>
-              </ul>
-            </div>
-          </div>
+<div className="experience-item">
+<strong>AppUnik</strong> – Machine Learning Intern (Sep 2022 – Aug 2023)
+<p>
+Built and deployed GPT recommender system using FastAPI, Redis, FAISS, and AWS Lambda.
+Reduced latency by 40% and improved personalization accuracy by 18%.
+</p>
+</div>
 
-          {/* Experience 5 */}
-          <div className="experience-card">
-            <img
-              src={`${process.env.PUBLIC_URL}/atnt.png`}
-              alt="At&t"
-              className="experience-image"
-            />
-            <div className="experience-content">
-              <h3>Externship</h3>
-              <p>
-                <strong>AT&T</strong> | <strong>Jul 2021 – Aug 2021</strong>
-              </p>
-              <ul>
-                <li>
-                  Gained insights from industry experts on technology trends,
-                  data analytics, and advancements in communication.
-                </li>
-                <li>
-                  Participated in self-paced learning modules on cybersecurity
-                  and device protection, gaining a deep understanding of AT&T’s
-                  technological ecosystem.
-                </li>
-                <li>
-                  Earned a Credly badge and completion certificate, validating
-                  acquired skills and knowledge.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+
+<div className="experience-item">
+<strong>Battelle</strong> – Software Engineering Intern (Aug 2022 – May 2023)
+<p>
+Improved hazard detection accuracy 25% via anomaly modeling in Python.
+Deployed real-time field test modules across 3 platforms using Agile sprints.
+</p>
+</div>
+
+
+<div className="experience-item">
+<strong>AT&T</strong> – Externship (Jul 2021 – Aug 2021)
+<p>
+Participated in virtual technical bootcamp learning about cybersecurity, data infrastructure, and mobile networks.
+Completed self-paced modules and Q&A sessions with industry engineers to deepen technical foundation.
+</p>
+</div>
+</div>
+</section>
+
+
+      
       {/* Contact Section */}
-<section id="contact" className="section contact">
+{/* <section id="contact" className="section contact">
   <div className="content">
     <h2>Contact Me</h2>
     <p>
@@ -491,6 +256,16 @@ function App() {
   </li>
 </ul>
   </div>
+</section> */}
+
+<section id="contact" className="contact-section">
+  <h2>Contact</h2>
+  <p>Let's connect! You can find me on:</p>
+  <ul className="contact-links">
+    <li><a href="mailto:shahanshul@gmail.com">Email</a></li>
+    <li><a href="https://linkedin.com/in/anshul-shah2" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="https://github.com/shahanshul8052" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+  </ul>
 </section>
 
 
