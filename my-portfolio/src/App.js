@@ -57,7 +57,7 @@ function App() {
   <div className="hero-top-row">
     <div className="hero-photo">
       <img
-        src={`${process.env.PUBLIC_URL}/IMG_6651_Original.jpg`}
+        src={`${process.env.PUBLIC_URL}/0Y6A9294.jpg`}
         alt="Anshul Shah"
         className="profile-image-circle"
       />
@@ -118,7 +118,7 @@ function App() {
       Served as a Teaching Assistant for Systems Programming at Purdue, and conducted research applying natural language processing to economic data.
     </li>
           <li>
-            Reading <i>Siddartha</i> and learning more about enterprise architecture.
+            Reading <i>A Gentleman in Moscow</i> and learning more about enterprise architecture.
           </li>
         </ul>
       </section>
