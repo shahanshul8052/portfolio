@@ -64,7 +64,7 @@ function App() {
     </div>
     <div className="hero-info">
       <h1>Anshul Shah</h1>
-      <h2>CS @ Purdue · ML, Systems, Civic Tech</h2>
+      <h2>Software Engineer</h2>
     </div>
     <div className="hero-nav">
       <a href="#about">About</a>
@@ -76,7 +76,11 @@ function App() {
   </div>
 
   <p className="hero-description">
-      I'm a recent Purdue CS grad with a focus in machine learning and a minor in management—currently working on integrations at Sally Beauty. My background spans full-stack development, ML/AI, and civic tech. I'm passionate about simplifying complex systems and building tools that drive real-world impact.
+      I'm a Purdue CS grad with a focus in machine learning and a minor 
+      in management. I’m a software engineer on the Integrations team at Sally Beauty, where I build 
+      and support systems that connect enterprise platforms and help business workflows running. 
+      My background spans full-stack development, machine learning, and data-driven applications. 
+      I enjoy working on complex systems and turning them into reliable and maintainable solutions that make a real impact at scale.
 
   </p>
 </section>
@@ -108,28 +112,28 @@ function App() {
       <section id="about" className="current-work">
         <h2>What I'm Doing</h2>
         <ul>
-          <li>
-      Working as a Software Engineer at Sally Beauty in Dallas, focused on building internal tools and improving developer experiences.
-    </li>
-    <li>
-      Previously contributed to Insighter, a civic tech startup, where I helped design tools to structure and search government meeting data.
-    </li>
-    <li>
-      Served as a Teaching Assistant for Systems Programming at Purdue, and conducted research applying natural language processing to economic data.
-    </li>
-          <li>
-            Reading <i>A Gentleman in Moscow</i> and learning more about enterprise architecture.
-          </li>
+        <li>
+          Working as a Software Engineer at Sally Beauty in Dallas, building and maintaining systems that support enterprise integrations and internal platforms.
+        </li>
+        <li>
+          Previously worked with CoverGov, a civic tech startup, where I helped design tools to structure and search government meeting data.
+        </li>
+        <li>
+          Currently enrolled in an API and service design course to strengthen my foundation in system architecture and scalable backend design.
+        </li>
+        <li>
+          Outside of work, I am currently reading (<i>A Gentleman in Moscow</i>) and staying active with soccer and pickleball.
+        </li>
         </ul>
-      </section>
+        </section>
 
 
       <section id="projects" className="projects-section section">
   <h2>Projects</h2>
   <div className="project-list">
     <div className="project-item">
-      <strong>Civic Data Scraper (Orca Startup)</strong>
-      <p>Leading scalable pipeline for scraping and standardizing city meeting data using Python, Selenium, yt-dlp, and YouTube/Vimeo APIs.</p>
+      <strong>CoverGov Meeting Data Platform</strong>
+      <p>Designed and built a scalable data ingestion pipeline to scrape and standardize city meeting data using Python, Selenium, yt-dlp, and YouTube/Vimeo APIs.</p>
     </div>
 
     <div className="project-item">
@@ -184,7 +188,7 @@ function App() {
 
 
 <div className="experience-item">
-<strong>Insighter (Startup)</strong> – Backend Developer (Apr 2025 – June 2025)
+<strong>CoverGov(Startup)</strong> – Backend Developer (Apr 2025 – June 2025)
 <p>
 Scraping, cleaning, and structuring city council meeting data using Python, Selenium, and yt-dlp.
 Improving onboarding time with modular architecture and regex/NLP tools.
